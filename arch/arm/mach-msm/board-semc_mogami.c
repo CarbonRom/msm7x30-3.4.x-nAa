@@ -208,7 +208,7 @@
 #endif
 
 #ifdef CONFIG_FB_MSM_HDPI
-#define MSM_PMEM_SF_SIZE  0x1A00000
+#define MSM_PMEM_SF_SIZE  0x1600000
 #ifdef CONFIG_FB_MSM_TRIPLE_BUFFER
 #define MSM_FB_PRIM_BUF_SIZE   (864 * 480 * 4 * 3) /* 4bpp * 3 Pages */
 #else
@@ -226,9 +226,9 @@
 #define MSM_FB_SIZE roundup(MSM_FB_PRIM_BUF_SIZE, 4096)
 
 #ifdef CONFIG_SEMC_CAMERA_8MP
-#define MSM_PMEM_ADSP_SIZE      0x2A00000
+#define MSM_PMEM_ADSP_SIZE      0x1E80000
 #else
-#define MSM_PMEM_ADSP_SIZE      0x1FBD000
+#define MSM_PMEM_ADSP_SIZE      0x1BC6000
 #endif
 #define PMEM_KERNEL_EBI0_SIZE   0x600000
 
