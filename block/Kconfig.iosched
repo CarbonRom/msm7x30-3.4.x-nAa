@@ -2,6 +2,9 @@ if BLOCK
 
 menu "IO Schedulers"
 
+config IOSCHED_NOOP
+	bool
+
 config IOSCHED_BFQ
 	tristate "BFQ I/O scheduler"
 	depends on EXPERIMENTAL
